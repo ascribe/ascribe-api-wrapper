@@ -1,6 +1,4 @@
-# Ascribe API Wrapper
+# ascribe SPOOL API Python Wrapper
 
-## TODOS
-- Doc-stringify the wrapper.
-- Add consignments / unconsignments / loans.
-- Add exceptions.
+This is a communauty-based python wrapper around the [ascribe ownership REST
+API](http://docs.ascribe.apiary.io).
