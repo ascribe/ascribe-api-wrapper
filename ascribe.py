@@ -159,6 +159,11 @@ class AscribeWrapper:
     def deny_loan_for_edition(self):
         pass
 
+    def share_piece(self, data):
+        path = "/api/ownership/shares/pieces/"
+        return self._post_data(path, data)
+
+
 if __name__ == '__main__':
     token = "Bearer x"
     am = AscribeWrapper(token)
