@@ -8,7 +8,11 @@ class AscribeWrapper:
     def __init__(self, token):
         self.token = token
         self.base = 'https://www.ascribe.io'
-        self.headers = {"Authorization": self.token, "User-Agent": "ascribe-api-wrapper v0.01", "Content-Type": "application/json"}
+        self.headers = {
+            "Authorization": self.token,
+            "User-Agent": "ascribe-api-wrapper v0.01",
+            "Content-Type": "application/json",
+        }
 
     def _get_data(self, path, payload={}):
         rq = requests.get(self.base + path, headers=self.headers, params=payload)
