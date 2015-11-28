@@ -1,6 +1,10 @@
 import json
+import logging
 
 import requests
+
+
+logger = logging.getLogger(__name__)
 
 
 class AscribeWrapper:
@@ -25,8 +29,15 @@ class AscribeWrapper:
         rq = requests.post(self.base + path, data=json.dumps(data), headers=self.headers)
         if rq.status_code in (200, 201):
             return rq.json()
-        else:
-            raise Exception("Request failed!")
+
+        logger.error('%d %s', rq.status_code, rq.reason)
+
+        try:
+            logger.error('%s', rq.json())
+        except json.JSONDecodeError:
+            pass
+
+        raise Exception("Request failed!")
 
     def _delete_data(self, path, data={}):
         rq = requests.delete(self.base + path, headers=self.headers, data=data)
