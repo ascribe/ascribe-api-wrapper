@@ -2,6 +2,7 @@ import json
 
 import requests
 
+
 class AscribeWrapper:
 
     def __init__(self, token):
