@@ -23,7 +23,7 @@ class AscribeWrapper:
 
     def _post_data(self, path, data):
         rq = requests.post(self.base + path, data=json.dumps(data), headers=self.headers)
-        if rq.status_code == 201:
+        if rq.status_code in (200, 201):
             return rq.json()
         else:
             raise Exception("Request failed!")
