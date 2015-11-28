@@ -1,0 +1,5 @@
+api:
+  build: .
+  volumes:
+    - ./:/usr/src/app/
+  command: py.test -v tests.py
