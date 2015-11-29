@@ -1,7 +1,13 @@
 language: python
 python: 3.5
 
-install:
-  - pip install pytest requests responses
+env:
+  - TOX_ENV=py27
+  - TOX_ENV=py33
+  - TOX_ENV=py34
+  - TOX_ENV=py35
 
-script: py.test -v tests.py
+install:
+  - pip install tox
+
+script: tox -e $TOX_ENV
