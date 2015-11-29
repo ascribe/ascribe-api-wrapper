@@ -1,3 +1,4 @@
+import os
 import json
 import logging
 
@@ -9,11 +10,17 @@ logger = logging.getLogger(__name__)
 
 class AscribeWrapper:
 
-    def __init__(self, token):
-        self.token = token
+    def __init__(self, token=None):
+        if token:
+            self.token = token
+        else:
+            try:
+                self.token = os.environ['ASCRIBE_TOKEN']
+            except KeyError:
+                raise Exception("Either pass a token, or set 'ASCRIBE_TOKEN'")
         self.base = 'https://www.ascribe.io'
         self.headers = {
-            "Authorization": self.token,
+            "Authorization": 'bearer {}'.format(self.token),
             "User-Agent": "ascribe-api-wrapper v0.01",
             "Content-Type": "application/json",
         }

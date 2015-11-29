@@ -1,5 +1,7 @@
-api:
+ascribe:
   build: .
   volumes:
     - ./:/usr/src/app/
+  env_file:
+    - /opt/ascribe_api_secret_token
   command: py.test -v tests.py
