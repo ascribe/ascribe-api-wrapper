@@ -1,6 +1,11 @@
 ascribe SPOOL API Python Wrapper
 ================================
 
+.. image:: https://travis-ci.org/ascribe/ascribe-api-wrapper.svg
+    :target: https://travis-ci.org/ascribe/ascribe-api-wrapper
+.. image:: https://codecov.io/github/ascribe/ascribe-api-wrapper/coverage.svg?branch=master
+    :target: https://codecov.io/github/ascribe/ascribe-api-wrapper?branch=master
+
 This is a communauty-based python wrapper around the `ascribe ownership REST
 API <http://docs.ascribe.apiary.io>`_.
 
