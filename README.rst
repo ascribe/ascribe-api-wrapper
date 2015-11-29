@@ -19,7 +19,7 @@ Usage Example: Registering a Piece
 .. code-block:: python
     
     >>> from ascribe import AscribeWrapper
-    >>> ascribe_wrapper = AscribeWrapper('bearer your-token')
+    >>> ascribe_wrapper = AscribeWrapper('your-token')
     >>> piece = {
         'file_url': 'https://s3.eu-central-1.amazonaws.com/bucket/img.jpg',
         'artist_name': 'mystery',

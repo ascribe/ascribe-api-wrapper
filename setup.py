@@ -14,7 +14,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='ascribe',
-    version='0.0.5.dev1',
+    version='0.0.6.dev1',
     description='ascribe api',
     long_description=long_description,
     url='https://github.com/ascribe/ascribe-api-wrapper',
