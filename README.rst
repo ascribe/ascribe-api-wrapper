@@ -42,3 +42,9 @@ Usage Example: Registering a Piece
         ...
         ...
     }}
+
+
+Documentation
+-------------
+
+https://ascribe.readthedocs.org
