@@ -4,6 +4,14 @@ This is a communauty-based python wrapper around the [ascribe ownership REST
 API](http://docs.ascribe.apiary.io).
 
 
+## Installation
+
+```bash
+pip install ascribe
+
+```
+
+
 ## Usage Example: Registering a Piece
 
 ```python
