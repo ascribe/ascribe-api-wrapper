@@ -10,7 +10,7 @@ def test_ascribe_wrapper_instantiation():
     assert 'Authorization' in ascribe_wrapper.headers
     assert 'User-Agent' in ascribe_wrapper.headers
     assert 'Content-Type' in ascribe_wrapper.headers
-    assert ascribe_wrapper.headers['Authorization'] == token
+    assert ascribe_wrapper.headers['Authorization'] == 'bearer ' + token
     assert ascribe_wrapper.headers['User-Agent'] == 'ascribe-api-wrapper v0.01'
     assert ascribe_wrapper.headers['Content-Type'] == 'application/json'
 
