@@ -17,7 +17,7 @@ setup(
     version='0.0.6.dev1',
     description='ascribe api',
     long_description=long_description,
-    url='https://github.com/ascribe/ascribe-api-wrapper',
+    url='https://ascribe.readthedocs.org',
     author='Oskar Paolini, Sylvain Bellemare',
     author_email='sylvain@ascribe.io',
     license='MIT',
