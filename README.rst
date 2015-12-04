@@ -6,8 +6,7 @@ ascribe SPOOL API Python Wrapper
 .. image:: https://codecov.io/github/ascribe/ascribe-api-wrapper/coverage.svg?branch=master
     :target: https://codecov.io/github/ascribe/ascribe-api-wrapper?branch=master
 
-This is a communauty-based python wrapper around the `ascribe ownership REST
-API <http://docs.ascribe.apiary.io>`_.
+`ascribe ownership REST API <http://docs.ascribe.apiary.io>`_ Python wrapper.
 
 
 Installation
@@ -18,8 +17,8 @@ Installation
     pip install ascribe
 
 
-Usage Example: Registering a Piece
-----------------------------------
+Example: Registering a Piece
+----------------------------
 
 .. code-block:: python
     
