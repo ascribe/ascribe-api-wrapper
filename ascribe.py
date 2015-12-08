@@ -62,7 +62,7 @@ class AscribeWrapper:
         return self._post_data(path, piece)
 
     def retrieve_piece(self, piece_id):
-        path = "/api/pieces/piece_id"
+        path = "/api/pieces/{}".format(piece_id)
         return self._get_data(path)
 
     def delete_piece(self):
