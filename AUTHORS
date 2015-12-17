@@ -1,0 +1,15 @@
+This ascribe API Python wrapper was originally developed by Oskar Paolini in
+September 2015, at the ascribe CONSTRUCT Hackathon, held at the Creators Hack
+Lab, in Berlin, Germany.
+
+Very often, starting something requires one to overcome some kind of inertia.
+
+We are grateful to Oskar who overcame this kind of inertia with his original
+work!
+
+
+Thanks to all contributors:
+
+    Oskar Paolini <https://github.com/opaolini>
+    Ryan Henderson <https://github.com/rhsimplex>
+    Sylvain Bellemare <https://github.com/sbellem>
